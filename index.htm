@@ -13,10 +13,21 @@
 <link rel="stylesheet" href="nivo/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
-<!--====== If Ie======-->
-<!--[if lte IE 7]> <html class="ie7"> <![endif]-->
-<!--[if IE 8]>  <html class="ie8"> <![endif]-->
-<!--[if IE 9]>  <html class="ie9"> <![endif]-->
+
+<!--====== Google Analytics ======-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40336680-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 
 <body>
@@ -323,143 +334,81 @@
 <script type="text/javascript" src="js/modernizr.custom.97074.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript">
-
-
-    //<![CDATA[
-     $(window).load(function() { // makes sure the whole site is loaded
-      $("#status").fadeOut(); // will first fade out the loading animation
-      $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
-     })
-    //]]>
-
-//Nivo Sider .
-//
-//You can choose from the following effects:
-//
-//sliceDown
-//sliceDownLeft
-//sliceUp
-//sliceUpLeft
-//sliceUpDown
-//sliceUpDownLeft
-//fold
-//fade
-//random
-//slideInRight
-//slideInLeft
-//boxRandom
-//boxRain
-//boxRainReverse
-//boxRainGrow-fluid
-//boxRainGrow-fluidReverse
-
-   $(function(){
-            $('#slider').nivoSlider({effect:'fade'})
+    $(window).load(function () { // makes sure the whole site is loaded
+        $("#status").fadeOut(); // will first fade out the loading animation
+        $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+    })
+    $(function () {
+        $('#slider').nivoSlider({
+            effect: 'fade'
+        })
     });
-
-////Fade In/Out menu on scroll
-   $(window).bind("scroll", function() {
-   if ($(this).scrollTop() >700) {
-     $(".navbar").css({"position":"fixed","top":"0px"});
-    } else {
-     $(".navbar").css({"position":"relative"});
- };
- 
- 
-
-});
-
-
-// Menu active class
-
-
-
-////Fade In/Out up_arrow
-    
-$(window).bind("scroll", function() {
-    if ($(this).scrollTop() >750) {
-     $("#up_arrow").fadeIn();
-    } else {
-     $("#up_arrow").stop().fadeOut(1);
-   }
-});
-
-
-
-
-////Fade In/Out up_arrow
-    
-$(window).bind("scroll", function() {
-    if ($(this).scrollTop() >750) {
-     $("#down_arrow").css('disQuickstart','none');
-    } else {
-     $("#down_arrow").css('disQuickstart','block');
-   }
-});
-
-////Fade Slide 1 Container
-$('.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form').css('opacity','0');
-// call waypoint plugin
-$('.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form').waypoint(function(event, direction) {
-    // do your fade in here
-    $(this).addClass('animated fadeInUp');
-}, {
-offset: '90%'
-    
-});
-
-
-$('.thumbs').waypoint(function(event, direction) {
-    // do your fade in here
-    $('.plus').addClass('animated fadeInUp');
-}, {
-offset: '100%'
-    });
-
-//Gallery overlay on hover
-    $(function() {
-            
-                $('.thumbs').each( function() { $(this).hoverdir(); } );
-
+    ////Fade In/Out menu on scroll
+    $(window).bind("scroll", function () {
+        if ($(this).scrollTop() > 700) {
+            $(".navbar").css({
+                "position": "fixed",
+                "top": "0px"
             });
-            
-    $('a').click(function(e){ return true; });
-
-
-
+        } else {
+            $(".navbar").css({
+                "position": "relative"
+            });
+        };
+    });
+    // Menu active class
+    ////Fade In/Out up_arrow
+    $(window).bind("scroll", function () {
+        if ($(this).scrollTop() > 750) {
+            $("#up_arrow").fadeIn();
+        } else {
+            $("#up_arrow").stop().fadeOut(1);
+        }
+    });
+    ////Fade In/Out up_arrow
+    $(window).bind("scroll", function () {
+        if ($(this).scrollTop() > 750) {
+            $("#down_arrow").css('disQuickstart', 'none');
+        } else {
+            $("#down_arrow").css('disQuickstart', 'block');
+        }
+    });
+    ////Fade Slide 1 Container
+    $('.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form').css('opacity', '0');
+    // call waypoint plugin
+    $('.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form').waypoint(function (event, direction) {
+        // do your fade in here
+        $(this).addClass('animated fadeInUp');
+    }, {
+        offset: '90%'
+    });
+    $('.thumbs').waypoint(function (event, direction) {
+        // do your fade in here
+        $('.plus').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
+    });
+    //Gallery overlay on hover
+    $(function () {
+        $('.thumbs').each(function () {
+            $(this).hoverdir();
+        });
+    });
+    $('a').click(function (e) {
+        return true;
+    });
     //Testimonial carousel
     $('#testimonialsCarousel').carousel({
-   interval:3000
- })
-
-
-// Team Icons
-
-
-$('.member_social ul li img').mouseover(function(){
-    $(this).toggleClass('animated swing');
-});
-    
-
-
-    
-/// Wellcome Message
-$(document).ready(function() {
-$('#wellcome_message').addClass('animated fadeInUp');
-
-
-});
-    
- </script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-40336680-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script> 
+        interval: 3000
+    })
+    // Team Icons
+    $('.member_social ul li img').mouseover(function () {
+        $(this).toggleClass('animated swing');
+    });
+    /// Wellcome Message
+    $(document).ready(function () {
+        $('#wellcome_message').addClass('animated fadeInUp');
+    });
+</script>
 </body>
 </html>

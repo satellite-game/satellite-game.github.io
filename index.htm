@@ -17,8 +17,12 @@
 <!--====== Google Analytics (with https://github.com/CardinalPath/gas)======-->
 <script type="text/javascript">
     var _gas = _gas || [];
-    _gas.push(['_setAccount', 'UA-40336680-2']); // REPLACE WITH YOUR GA NUMBER
-    _gas.push(['_setDomainName', 'satellite-game.com']); // REPLACE WITH YOUR DOMAIN
+    _gas.push(['_setAccount', 'UA-40336680-2']);
+    _gas.push(['_setAllowLinker', true]);
+    _gas.push(['_setDomainName', 'satellite-game.com']);
+    _gas.push(['_setDomainName', 'app.satellite-game.com']);
+    _gas.push(['_setDomainName', 'satellite.elasticbeanstalk.com']);
+    _gas.push(['_gasMultiDomain', 'click']);
     _gas.push(['_trackPageview']);
     _gas.push(['_gasTrackForms']);
     _gas.push(['_gasTrackOutboundLinks']);

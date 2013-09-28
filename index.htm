@@ -14,22 +14,27 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-<!--====== Google Analytics ======-->
+<!--====== Google Analytics (with https://github.com/CardinalPath/gas)======-->
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  var pluginUrl = 
-   '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-40336680-2']);
-  _gaq.push(['_trackPageview']);
+    var _gas = _gas || [];
+    _gas.push(['_setAccount', 'UA-40336680-2']); // REPLACE WITH YOUR GA NUMBER
+    _gas.push(['_setDomainName', 'satellite-game.com']); // REPLACE WITH YOUR DOMAIN
+    _gas.push(['_trackPageview']);
+    _gas.push(['_gasTrackForms']);
+    _gas.push(['_gasTrackOutboundLinks']);
+    _gas.push(['_gasTrackMaxScroll']);
+    _gas.push(['_gasTrackDownloads']);
+    _gas.push(['_gasTrackMailto']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
 </script>
-
 </head>
 
 <body>

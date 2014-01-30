@@ -1223,9 +1223,9 @@ padding-top:50px;
 	top: 0;
 }
 
-.navbar  { top:0 !important;
-position:fixed !important;
-}
+.navbar {
+	top: 0;
+	position: fixed;
 }
 
 /* Landscape phone to portrait tablet */

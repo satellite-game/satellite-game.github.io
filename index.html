@@ -47,23 +47,6 @@
         <div id="status">&nbsp;</div>
     </div>
 
-
-    <!--
-    ==================================
-                    THE WELLCOME PAGE
-    ==================================
-    -->
-
-    <div class="slide" id="slide1" data-section="1" data-stellar-background-ratio="0.5">
-        <div class="clearfix container">
-            <div id="wellcome_message" >
-                <h1>Satellite</h1>
-                <a href="http://app.satellite-game.com"><button class="btn btn-large">Play Now!</button></a>
-            </div>
-
-        </div>
-    </div>
-
     <!--
     ==================================
                             Menu
@@ -90,6 +73,22 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--
+    ==================================
+                    THE WELLCOME PAGE
+    ==================================
+    -->
+
+    <div class="slide" id="slide1" data-section="1" data-stellar-background-ratio="0.5">
+        <div class="clearfix container">
+            <div id="wellcome_message" >
+                <h1>Satellite</h1>
+                <a href="http://app.satellite-game.com"><button class="btn btn-large">Play Now!</button></a>
+            </div>
+
         </div>
     </div>
 
@@ -353,19 +352,7 @@
                 effect: 'fade'
             })
         });
-        ////Fade In/Out menu on scroll
-        $(window).bind("scroll", function () {
-            if ($(this).scrollTop() > 700) {
-                $(".navbar").css({
-                    "position": "fixed",
-                    "top": "0px"
-                });
-            } else {
-                $(".navbar").css({
-                    "position": "relative"
-                });
-            };
-        });
+
         // Menu active class
         ////Fade In/Out up_arrow
         $(window).bind("scroll", function () {

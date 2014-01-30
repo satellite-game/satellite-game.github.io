@@ -64,11 +64,6 @@ a:hover {
   text-decoration : none;
 }
 
-a:visited {
-  color : #ccc;
-  text-decoration : none;
-}
-
 h2, h3, h4, h5, h6 {
   text-align : center;
   color : #fff;
@@ -424,11 +419,11 @@ input:-moz-placeholder {
   margin-bottom: 33px;
 }
 
-.about a {
+.about p a {
   color: rgb(41, 128, 185);
 }
 
-.about a:hover {
+.about p a:hover {
   text-decoration: underline;
 }
 

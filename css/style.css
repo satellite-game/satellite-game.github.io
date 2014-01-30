@@ -1002,10 +1002,10 @@ footer p strong {
 .btn-info {
 	background-image: none;
 	box-shadow: 0 5px 0 #25a1c0;
-	background-color: #41bedd;
+	background-color: rgb(41, 128, 185);
 }
 .btn-info:hover {
-	background-color: #3dd4f9;
+	background-color: rgb(41, 140, 185);
 }
 .btn-info:active {
 	box-shadow: 0 0px 0 #25a1c0;

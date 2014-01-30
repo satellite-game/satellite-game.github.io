@@ -1,34 +1,33 @@
-jQuery(document).ready(function ($) {
-  $(window).stellar();
+$(function () {
   var links = $('.navigation').find('li');
   var slide = $('.slide');
   var button = $('.button');
-  var mywindow = $(window);
-  var htmlbody = $('html,body');
+  var myWindow = $(window);
+  var htmlBody = $('html,body');
+  myWindow.stellar();
 
   slide.waypoint(function (event, direction) {
     dataslide = $(this).attr('data-section');
 
     if (direction === 'down') {
       $('.navigation li[data-section="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-    }
-    else {
+    } else {
       $('.navigation li[data-section="' + dataslide + '"]').addClass('active').next().removeClass('active');
     }
   });
 
-  mywindow.scroll(function () {
-    if (mywindow.scrollTop() == 0) {
+  myWindow.scroll(function () {
+    if (myWindow.scrollTop() === 0) {
       $('.navigation li[data-section="1"]').addClass('active');
       $('.navigation li[data-section="2"]').removeClass('active');
     }
   });
 
-  function goToByScroll(dataslide) {
-    htmlbody.animate({
+  var goToByScroll = function (dataSlide) {
+    htmlBody.animate({
       scrollTop: $('.slide[data-section="' + dataslide + '"]').offset().top
     }, 1200, 'easeInOutQuint');
-  }
+  };
 
   links.click(function (e) {
     e.preventDefault();
@@ -46,7 +45,7 @@ jQuery(document).ready(function ($) {
 $(window).load(function () { // makes sure the whole site is loaded
   $("#status").fadeOut(); // will first fade out the loading animation
   $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
-})
+});
 
 // Menu active class
 ////Fade In/Out up_arrow

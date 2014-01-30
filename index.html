@@ -10,7 +10,6 @@
 <!--====== CSS Files ======-->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="screen">
-<link rel="stylesheet" href="nivo/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 
@@ -65,12 +64,11 @@
 
                     <ul class="navigation">
                         <li data-section="1" data-toggle="collapse" data-target=".nav-collapse">Home</li>
-                        <li data-section="2" data-toggle="collapse" data-target=".nav-collapse">Quickstart</li>
-                        <li data-section="3" data-toggle="collapse" data-target=".nav-collapse">Tech Stack</li>
-                        <li data-section="4" data-toggle="collapse" data-target=".nav-collapse">Team</li>
+                        <li data-section="2" data-toggle="collapse" data-target=".nav-collapse">About</li>
+                        <li data-section="3" data-toggle="collapse" data-target=".nav-collapse">Quickstart</li>
+                        <li data-section="4" data-toggle="collapse" data-target=".nav-collapse">Tech Stack</li>
+                        <li data-section="5" data-toggle="collapse" data-target=".nav-collapse">Team</li>
                     </ul>
-
-                        <!-- .nav, .navbar-search, .navbar-form, etc -->
                 </div>
             </div>
         </div>
@@ -78,13 +76,13 @@
 
     <!--
     ==================================
-                    THE WELLCOME PAGE
+                    THE WELCOME PAGE
     ==================================
     -->
 
-    <div class="slide" id="slide1" data-section="1" data-stellar-background-ratio="0.5">
+    <div class="welcome slide" id="slide1" data-section="1" data-stellar-background-ratio="0.5">
         <div class="clearfix container">
-            <div id="wellcome_message" >
+            <div id="welcome_message" >
                 <h1>Satellite</h1>
                 <a href="http://app.satellite-game.com"><button class="btn btn-large">Play Now!</button></a>
             </div>
@@ -94,11 +92,28 @@
 
     <!--
     ==================================
+                            ABOUT
+    ==================================
+    -->
+
+    <div class="about slide" id="slide2" data-section="2" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <!-- Page title and description-->
+
+            <div class="row-fluid title">
+                <h1>Title</h1>
+                <h2>Peek behind the curtain...</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    ==================================
                              Quickstart
     ==================================
     -->
 
-    <div class="slide" id="slide5" data-section="2" data-stellar-background-ratio="0.5">
+    <div class="quickstart slide" id="slide3" data-section="3" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div class="row-fluid title">
                 <h1>Quickstart</h1>
@@ -187,7 +202,7 @@
 
     <!--
     ==================================
-                      Shortcodes Button Area
+                Shortcodes Button Area
     ==================================
     -->
 
@@ -205,7 +220,7 @@
     ==================================
     -->
 
-    <div class="slide" id="slide2" data-section="3"   data-stellar-background-ratio="0.5">
+    <div class="techstack slide" id="slide4" data-section="4" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <!-- Page title and description-->
 
@@ -261,23 +276,14 @@
             </div>
         </div>
     </div>
-    <!--
-    ==================================
-                            Testimonials
-    ==================================
-    -->
-    <div class="row-fluid" id="subArea1">
-        <div class="container">
 
-        </div>
-    </div>
     <!--
     ==================================
                             The Team
     ==================================
     -->
 
-    <div class="slide" id="slide3" data-section="4"  data-stellar-background-ratio="0.5" >
+    <div class="team slide" id="slide5" data-section="5"  data-stellar-background-ratio="0.5" >
         <div class="container clearfix">
             <div class="row-fluid title">
                 <h1 >The Team</h1>
@@ -286,7 +292,7 @@
             <div id="members" class="row-fluid">
 
                 <!--====== Andrew Spade ======-->
-                <div class="team span3">
+                <div class="team-member span3">
                     <a href="http://about.me/a.spade" target="_blank">
                         <img src="images/team/AndrewSpade.jpg" alt="image"  class="member_picture ">
                         <h3 class="member_name">Andrew Spade</h3>
@@ -295,7 +301,7 @@
                 </div>
 
                 <!--====== Gary Ryan ======-->
-                <div class="team span3">
+                <div class="team-member span3">
                     <a href="http://www.linkedin.com/in/garytryan" target="_blank">
                         <img src="images/team/GaryRyan.jpg" alt="image"  class="member_picture">
                         <h3  class="member_name">Gary Ryan</h3>
@@ -304,7 +310,7 @@
                 </div>
 
                 <!--====== Felix Tripier ======-->
-                <div class="team span3">
+                <div class="team-member span3">
                     <a href="http://www.linkedin.com/pub/felix-tripier/70/2b/a35/" target="_blank">
                         <img src="images/team/FelixTrepier.jpg" alt="image"  class="member_picture">
                         <h3  class="member_name">Felix Tripier</h3>
@@ -313,7 +319,7 @@
                 </div>
 
                 <!--====== Phillip Alexander ======-->
-                <div class="team span3">
+                <div class="team-member span3">
                     <a href="http://phillipalexander.io" target="_blank">
                         <img src="images/team/PhillipAlexander.jpg" alt="image"  class="member_picture">
                         <h3  class="member_name">Phillip Alexander</h3>
@@ -338,7 +344,6 @@
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="js/waypoints.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="nivo/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -347,11 +352,6 @@
             $("#status").fadeOut(); // will first fade out the loading animation
             $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
         })
-        $(function () {
-            $('#slider').nivoSlider({
-                effect: 'fade'
-            })
-        });
 
         // Menu active class
         ////Fade In/Out up_arrow
@@ -371,26 +371,15 @@
             }
         });
         ////Fade Slide 1 Container
-        $('.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form').css('opacity', '0');
+        $('.serv, #testimonialsCarousel, #members, #subArea3 .container, .table').css('opacity', '0');
         // call waypoint plugin
-        $('.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form').waypoint(function (event, direction) {
+        $('.serv, #testimonialsCarousel, #members, #subArea3the .container, .table').waypoint(function (event, direction) {
             // do your fade in here
             $(this).addClass('animated fadeInUp');
         }, {
             offset: '90%'
         });
-        $('.thumbs').waypoint(function (event, direction) {
-            // do your fade in here
-            $('.plus').addClass('animated fadeInUp');
-        }, {
-            offset: '100%'
-        });
-        //Gallery overlay on hover
-        $(function () {
-            $('.thumbs').each(function () {
-                $(this).hoverdir();
-            });
-        });
+
         $('a').click(function (e) {
             return true;
         });
@@ -404,7 +393,7 @@
         });
         /// Wellcome Message
         $(document).ready(function () {
-            $('#wellcome_message').addClass('animated fadeInUp');
+            $('#welcome_message').addClass('animated fadeInUp');
         });
     </script>
 </body>

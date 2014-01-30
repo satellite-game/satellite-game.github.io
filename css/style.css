@@ -405,8 +405,38 @@ input:-moz-placeholder {
 
 .about {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #fff;
+}
+
+.about h2 {
+  margin-bottom: 45px;
+  font-size: 2em;
+}
+
+.about p {
+  color: #3d3d3d;
+  text-align: left;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.about a {
+  color: rgb(41, 128, 185);
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+.about-description {
+  float: left;
+  width: 40%;
+  margin-top: -5px;
+}
+
+.oculus-video {
+  float: right;
 }
 
 /*

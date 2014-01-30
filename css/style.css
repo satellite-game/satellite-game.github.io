@@ -404,7 +404,6 @@ input:-moz-placeholder {
 }
 
 .about {
-  text-align: center;
   font-size: 1.2em;
   color: #fff;
 }
@@ -419,6 +418,10 @@ input:-moz-placeholder {
   text-align: left;
   margin: 0;
   line-height: 1.5em;
+}
+
+.about p:last-of-type {
+  margin-bottom: 33px;
 }
 
 .about a {

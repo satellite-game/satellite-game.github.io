@@ -1,10 +1,10 @@
 jQuery(document).ready(function ($) {
   $(window).stellar();
   var links = $('.navigation').find('li');
-  slide = $('.slide');
-  button = $('.button');
-  mywindow = $(window);
-  htmlbody = $('html,body');
+  var slide = $('.slide');
+  var button = $('.button');
+  var mywindow = $(window);
+  var htmlbody = $('html,body');
 
   slide.waypoint(function (event, direction) {
     dataslide = $(this).attr('data-section');

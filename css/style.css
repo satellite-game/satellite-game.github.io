@@ -1,6 +1,6 @@
  @import url('http://fonts.googleapis.com/css?family=Oswald:400,300,700');
- 
-/* 
+
+/*
 ==================================
 					Main Settings
 ==================================
@@ -164,13 +164,13 @@ font-family : 'Oswald', sans;
 input:-moz-placeholder {
 font-family : 'Oswald', sans;
 }
-/* 
+/*
 ==================================
 							Menu
 ==================================
  */
- 
- 
+
+
 .navbar {
 	margin-bottom: -50px;
 	width: 100%;
@@ -259,7 +259,7 @@ font-family : 'Oswald', sans;
 	background-image: none;
 	color: #ccc;
 }
-/* 
+/*
 ==================================
 						 General Slide
 ==================================
@@ -271,23 +271,25 @@ font-family : 'Oswald', sans;
 	position : relative;
 	padding: 125px 0;
 }
-/* 
+/*
 ==================================
-						 Slide 1 
+						 Slide 1
 ==================================
  */
- 
+
 
 #slide1 {
 	min-height: 550px;
 	position: relative;
 }
+
 #wellcome_message h1 {
 	text-align: center;
 	padding: 50px;
 	font-size: 7em;
 	/*background: rgb(41, 128, 185);*/
 }
+
 #wellcome_message {
 	animation-duration: 1.3s;
 	-webkit-animation-duration: 1.3s;
@@ -300,6 +302,7 @@ font-family : 'Oswald', sans;
 	-ms-animation-delay: 1.3s;
 	-o-animation-delay: 1.3s;
 	opacity: 0;
+	text-align: center;
 }
 /*Down Arrow*/
 #down_arrow {
@@ -340,9 +343,9 @@ font-family : 'Oswald', sans;
 	background-color: rgb(41, 128, 185);
 	box-shadow: none !important;
 }
-/* 
+/*
 ==================================
-					techstack-	 Slide 2 
+					techstack-	 Slide 2
 ==================================
  */
 
@@ -421,12 +424,12 @@ font-family : 'Oswald', sans;
   padding: 45px 17px;
   font-size: 19px;
 }
-/* 
+/*
 ==================================
 			subArea1		Testimonials area
 ==================================
  */
- 
+
 #subArea1 {
 	/*	background-image: url(../images/i4.jpg);
 	background-attachment: fixed;
@@ -472,13 +475,13 @@ blockquote {
 	left: 30px;
 	top: 0px;
 }
-/* 
+/*
 ==================================
 				Team- Slide 3
 ==================================
  */
- 
- 
+
+
 #slide3 {
 	background: url(../images/p1.png);
 	position: relative;
@@ -544,12 +547,12 @@ h3.member_name {
 	margin: 0;
 	height: 150px;
 }
-/* 
+/*
 ==================================
 				subArea2 - Slider area
 ==================================
  */
- 
+
 #subArea2 {
 
 }
@@ -578,12 +581,12 @@ h3.member_name {
 	background-color: rgba(0,47,255,1);
 	box-shadow: -5px 0px 0px 0px rgba(1, 1,1,0.5);
 }
-/* 
+/*
 ==================================
 				  Gallery  - Slide 4
 ==================================
  */
- 
+
 #slide4 {
 	background: url(../images/p5.png);
 	position: relative;
@@ -687,13 +690,13 @@ h3.member_name {
 	text-align: center;
 	background-color: rgba(255,255,255, 0.6);
 }
-/* 
+/*
 ==================================
-		 Shortcodes Button	SubArea3 
+		 Shortcodes Button	SubArea3
 ==================================
  */
 
- 
+
 #subArea3 {
 	/*	background-image: url(../images/i1.jpg);
 	background-attachment: fixed;
@@ -701,7 +704,7 @@ h3.member_name {
 	padding: 100px 0;
 	text-align: center;
 }
-/* 
+/*
 ==================================
 						 Slide 5
 ==================================
@@ -772,7 +775,7 @@ table:hover {
 	margin-top: -20px;
 }
 
-/* 
+/*
 ==================================
 	      subArea4 Contact Social Icons
 ==================================
@@ -810,16 +813,16 @@ table:hover {
 	-o-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 }
-/* 
+/*
 ==================================
 						 Slide 6 - Contact
 ==================================
  */
- 
- 
+
+
 
 /*Contact Form*/
- 
+
 #slide6 {
 	background: url(../images/p3.png);
 	padding-bottom: 0;
@@ -906,12 +909,12 @@ footer p {
 footer p strong {
 	color: #fff !important;
 }
-/* 
+/*
 ==================================
 					Shortcodes  page
 ==================================
  */
- 
+
 #shortcodes-page {
 	background: url(../images/p3.png);
 }
@@ -1220,11 +1223,11 @@ padding-top:50px;
 	top: 0;
 }
 
-.navbar  { top:0 !important; 
+.navbar  { top:0 !important;
 position:fixed !important;
 }
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 body {
@@ -1329,22 +1332,22 @@ blockquote p {
 	margin-bottom: 30px;
 }
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	
+
 }
- 
- 
+
+
  /*For Internet Explorer */
 
 .serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form {
-	
+
 	opacity:1 !important; /* IE 9 and below */
 }
 
 
-/*PASTE CODE FOR LIGHT SKIN UNDER THIS LINE */ 
+/*PASTE CODE FOR LIGHT SKIN UNDER THIS LINE */
 
 
 

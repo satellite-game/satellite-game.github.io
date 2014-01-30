@@ -169,9 +169,6 @@ font-family : 'Oswald', sans;
 							Menu
 ==================================
  */
- .navbar {
-
- }
 
 .navbar {
 	position: fixed;
@@ -195,7 +192,14 @@ font-family : 'Oswald', sans;
 	box-shadow: none;
 	padding: 0;
 }
+
+.navbar-inner .btn-info {
+	float: left;
+	margin-top: 17px;
+}
+
 .navigation {
+	float: right;
 	padding: 30px;
 	margin: 0;
 	text-align: right;

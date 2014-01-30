@@ -1,7 +1,7 @@
 $(function () {
   var links = $('.navigation').find('li');
   var slide = $('.slide');
-  var button = $('.button');
+  var scrollAnchor = $('.scroll-anchor');
   var myWindow = $(window);
   var htmlBody = $('html,body');
   myWindow.stellar();
@@ -35,10 +35,10 @@ $(function () {
     goToByScroll(dataslide);
   });
 
-  button.click(function (e) {
-    e.preventDefault();
+  scrollAnchor.on('click', function (e) {
     dataslide = $(this).attr('data-section');
     goToByScroll(dataslide);
+    e.preventDefault();
   });
 });
 

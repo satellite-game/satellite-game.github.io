@@ -585,16 +585,15 @@ iframe, object, embed {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 317px;
-  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.team-member:nth-child(5n + 1) {
+  margin-left: 0;
 }
 
 .team-member:hover .member_social {
   margin-top: 140px;
-}
-
-.team-member-row {
-  margin-top: 50px;
 }
 
 .team-member-row:first-child {
@@ -880,8 +879,25 @@ iframe, object, embed {
     font-size: 5em;
   }
 
+  .navbar-inner {
+    padding-left: 20px;
+  }
+
   .slide {
     padding-top: 50px;
+  }
+
+  .about-description {
+    width: 100%;
+  }
+
+  .oculus-video-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .oculus-video {
+    padding: 0;
   }
 
   .controls h3 {
@@ -890,6 +906,18 @@ iframe, object, embed {
 
   .controls p {
     font-size: 1.5em;
+  }
+
+  .team-member {
+    width: 30.57%;
+  }
+
+  .team-member:nth-child(5n + 1) {
+    margin-left: 2.7624309392265194%;
+  }
+
+  .team-member:nth-child(3n + 1) {
+    margin-left: 0;
   }
 }
 

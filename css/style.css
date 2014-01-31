@@ -662,6 +662,44 @@ table:hover {
   margin-left: 0;
 }
 
+.team-member-social {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.team-member-social li {
+  font-size: 1.5em;
+  display:-moz-inline-stack;
+  display:inline-block;
+  zoom:1;
+  *display:inline;
+  margin-left: 10px;
+}
+
+.team-member-social li:first-child {
+  margin-left: 0;
+}
+
+.team-member-social a {
+  transition: all linear 250ms;
+  -webkit-transition: all linear 250ms;
+  -moz-transition: all linear 250ms;
+  -o-transition: all linear 250ms;
+  -ms-transition: all linear 250ms;
+  display: block;
+  text-align: center;
+  color: #ccc;
+}
+
+.team-member-social a:hover {
+  color: rgb(0, 136, 204);
+}
+
+.team-member-social icon {
+  width: 35px;
+  height: 35px;
+}
+
 .member_picture {
   width: 100%;
   position: relative;

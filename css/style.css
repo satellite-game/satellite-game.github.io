@@ -530,73 +530,27 @@ iframe, object, embed {
   padding-top: 150px;
 }
 
-.serv {
-  background-color: #272727;
-  height: 400px;
+.tech-grid {
+  background: rgb(41, 128, 185);
+  transition: all linear 100ms;
+  -webkit-transition: all linear 100ms;
+  -moz-transition: all linear 100ms;
+  -o-transition: all linear 100ms;
+  -ms-transition: all linear 100ms;
   -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  margin-bottom:30px;
+  margin-bottom: 40px;
+  width: 31.33%;
+  margin-left: 2%;
+  float: left;
 }
 
-.serv h3 {
-  text-align: center
-}
-
-.serv img {
-  position: relative;
-  margin-left: -50px;
-  left: 50%;
-  margin-top: -50px;
-  top: 50%;
-  transition: all linear 500ms;
-  -webkit-transition: all linear 500ms;
-  -moz-transition: all linear 500ms;
-  -o-transition: all linear 500ms;
-  -ms-transition: all linear 500ms;
-  height: 100px;
-  width: 100px;
-}
-
-.serv:hover img {
-  transform: rotate(15deg);
-  -webkit-transform: rotate(15deg) scale(2.2);
-  -ms-transform: rotate(15deg) scale(2.2);
-  -moz-transform: rotate(15deg) scale(2.2);
-  -o-transform: rotate(15deg) scale(2.2);
-  opacity: 0.5;
-  transition: linear 200ms;
-  -webkit-transition: linear 200ms;
-  -moz-transition: linear 200ms;
-  -o-transition: linear 200ms;
-  -ms-transition: linear 200ms;
-}
-
-.serv p {
-  padding: 20px;
-}
-
-.serv-img {
-  background: rgb(41, 128, 185);
-  height: 150px;
-  overflow: hidden;
-  margin-bottom: 5px;
-}
-
-.techtext {
-  margin: 25px 0;
-  letter-spacing: 0px;
-  border: none;
-  box-shadow: none;
-  border-radius: 70px;
-  background: #FFF;
-  color: #00bccb;
-  display: inline-block;
-  padding: 45px 17px;
-  font-size: 19px;
+.tech-grid:hover {
+  margin-top: -20px;
+  margin-bottom: 60px;
 }
 
 /*

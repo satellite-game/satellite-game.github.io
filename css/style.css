@@ -634,10 +634,32 @@ table:hover {
   -o-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
+  width: 17.24%;
+  float: left;
+  margin-left: 2.7624309392265194%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .team-member:hover .member_social {
   margin-top: 140px;
+}
+
+.team-member-row {
+  margin-top: 50px;
+}
+
+.team-member-row:first-child {
+  margin-top: 0;
+}
+
+.team-member-first {
+  margin-left: 10%;
+}
+
+.team-member-row:first-child .team-member-first {
+  margin-left: 0;
 }
 
 .member_picture {
@@ -652,17 +674,6 @@ h3.member_name {
   z-index: 0;
 }
 
-.member_social {
-  background: rgb(41, 128, 185);
-  text-align: center;
-  position: absolute;
-  top: 72px;
-  padding-top: 10px;
-  width: 100%;
-  z-index: 1;
-  transition: ease-in-out 300ms;
-}
-
 .team-member:hover .member_social {
   height: auto;
   opacity: 1;
@@ -671,7 +682,6 @@ h3.member_name {
 .team-member p {
   padding : 20px;
   margin: 0;
-  height: 150px;
 }
 
 /*

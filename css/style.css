@@ -929,8 +929,6 @@ iframe, object, embed {
   }
 
   .slide {
-    margin-top: 0;
-    margin-bottom: 0;
     padding: 50px 0;
   }
 
@@ -943,86 +941,26 @@ iframe, object, embed {
     text-align: center;
   }
 
-  h1 strong {
-    border-bottom: 0;
-  }
-
   h2 {
     font-size: 2em;
     text-align: center;
   }
 
   .container {
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
   }
 
-  .navigation {
-    padding: 10px;
+  .welcome h1 {
+    padding-top: 130px;
   }
 
-  .navigation li {
-    display: block;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .logo {
-    display: none !important;
-  }
-
-  #up_arrow {
-    display: none !important;
-  }
-
-  /*Slide2*/
-  .serv {
-    height: auto !important;
-  }
-
-  /* Slide3*/
-  .team-member {
-    margin-bottom: 10px;
-    height: auto;
-  }
-
-  .team-member p {
-    height: auto;
-  }
-
-  /*SubArea2 Slider */
-  #subArea2 {
-    padding: 0 0 !important;
-  }
-
-  /*Slide4*/
-  .gallery >.row-fluid {
-    margin-bottom: 30px !important;
-  }
-
-  .secondary-row .span6:last-of-type {
-    margin-left: 4% !important;
-  }
-
-  .modal {
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .modal-header .close {
-    display: block;
-    position: relative;
-    top: 25px;
-    right: 25px;
-  }
-
-  /*Slide6*/
-  .table:hover {
+  .controls:hover {
     margin-top: 0;
   }
 
-  .contact-details {
-    margin-bottom: 30px;
+  .tech-grid:hover {
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 }
 

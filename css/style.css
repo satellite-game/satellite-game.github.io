@@ -305,7 +305,7 @@ input:-moz-placeholder {
   width : 100%;
   height : auto;
   position : relative;
-  padding: 125px 0;
+  padding: 100px 0;
 }
 
 /*
@@ -315,7 +315,6 @@ input:-moz-placeholder {
  */
 
 #slide1 {
-  padding-top:100px;
   min-height: 550px;
   position: relative;
 }
@@ -391,7 +390,6 @@ input:-moz-placeholder {
  */
 
 #slide2 {
-  padding-top: 150px;
   min-height: 550px;
   background: url(../images/p4.png);
 }
@@ -527,7 +525,6 @@ iframe, object, embed {
 
 #slide4 {
   background: url(../images/p4.png);
-  padding-top: 150px;
 }
 
 .tech-grid {
@@ -871,33 +868,13 @@ iframe, object, embed {
  */
 
 /* Portrait tablet to landscape and desktop */
-@media (max-width: 1250px) {
-  .member_social {
-    display: none;
-  }
-}
-
 @media (max-width: 979px) {
   h1 {
     font-size: 5em;
   }
 
-  #slide2 {
-    padding-top:50px;
-  }
-
-  #slider {
-    width: auto;
-    margin: 0 0 0 0;
-    left: 0;
-  }
-
-  .theme-default .nivo-directionNav a {
-    opacity: 1;
-  }
-
-  .theme-default a.nivo-prevNav, .theme-default a.nivo-nextNav {
-    top: 0;
+  .slide {
+    padding-top: 50px;
   }
 }
 

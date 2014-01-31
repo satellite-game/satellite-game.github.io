@@ -484,6 +484,9 @@ iframe, object, embed {
 }
 
 .controls {
+  width: 18%;
+  margin-left: 2%;
+  float: left;
   transition: margin-top 100ms;
   -moz-transition: margin-top 100ms;
   -ms-transition: margin-top 100ms;
@@ -492,6 +495,10 @@ iframe, object, embed {
   border-bottom: 5px solid rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   text-align: center;
+}
+
+.controls:first-child {
+  margin-left: 0;
 }
 
 .controls:hover {
@@ -875,6 +882,14 @@ iframe, object, embed {
 
   .slide {
     padding-top: 50px;
+  }
+
+  .controls h3 {
+    font-size: 1.3em;
+  }
+
+  .controls p {
+    font-size: 1.5em;
   }
 }
 

@@ -212,7 +212,7 @@ input:-moz-placeholder {
   padding: 0;
 }
 
-.navbar-inner .btn-info {
+.navbar-inner .btn-medium {
   float: left;
   margin-top: 17px;
 }
@@ -728,6 +728,11 @@ h3.member_name {
 
 .btn-large {
   padding: 20px 55px;
+  font-size: 1.4em;
+}
+
+.btn-medium {
+  padding: 10px 35px;
   font-size: 1.4em;
 }
 

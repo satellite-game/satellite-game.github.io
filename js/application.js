@@ -85,3 +85,23 @@ $('a').click(function (e) {
 $(document).ready(function () {
     $('#welcome_message').addClass('animated fadeInUp');
 });
+
+// Team members description box on mouse over
+$(function () {
+  var member = $('.team-member-info');
+  member.on('mouseenter', function () {
+    $(this).find('.team-role').stop(true, true).fadeIn();
+  });
+  member.on('mouseleave', function () {
+    $(this).find('.team-role').fadeOut();
+  });
+});
+
+
+
+
+
+
+
+
+

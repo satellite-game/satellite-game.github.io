@@ -226,6 +226,7 @@ input:-moz-placeholder {
   float: right;
   margin-top: 24px;
   margin-right: 30px;
+  display: none;
 }
 
 .nav-condensed-menu span {
@@ -964,19 +965,38 @@ iframe, object, embed {
   }
 }
 
+@media (max-width: 706px) {
+  .navigation {
+    float: right;
+    padding: 30px 0;
+    display: block;
+  }
+
+  .navbar-inner a:nth-of-type(2) {
+    display: none;
+    padding-left: 0;
+  }
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .navbar-inner {
     padding: 0;
   }
 
-  .navbar-inner a {
+  .navbar-inner a:nth-of-type(2) {
     display: none;
   }
 
+  .nav-condensed-menu {
+    display: block;
+  }
+
   .navigation {
-    float: none;
+    display: none;
+    float: left;
     margin: 0;
+    margin-left: 80px;
     padding: 0;
   }
 

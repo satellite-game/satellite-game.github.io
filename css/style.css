@@ -978,6 +978,20 @@ iframe, object, embed {
     display: none;
     padding-left: 0;
   }
+
+  .team-member {
+    width: 48%;
+    margin-left: 2.7624309392265194%;
+  }
+
+  .team-member:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+
+  .team-member:nth-child(4n) {
+    margin-right: 0;
+    margin-left: 2.7624309392265194%;
+  }
 }
 
 /* Landscape phones and down */

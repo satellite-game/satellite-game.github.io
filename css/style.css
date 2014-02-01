@@ -875,16 +875,16 @@ iframe, object, embed {
   .team-member:nth-child(6) {
     margin-left: 2.7624309392265194%;
   }
+
+  .navbar-inner {
+    padding-left: 20px;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
   h1 {
     font-size: 5em;
-  }
-
-  .navbar-inner {
-    padding-left: 20px;
   }
 
   .slide {

@@ -70,7 +70,7 @@ $(window).bind("scroll", function () {
 $('.serv, #testimonialsCarousel, #members, #subArea3 .container, .table').css('opacity', '0');
 
 // call waypoint plugin
-$('.serv, #testimonialsCarousel, #members, #subArea3the .container, .table').waypoint(function (event, direction) {
+$('.serv, #testimonialsCarousel, #members, #subArea3 .container, .table').waypoint(function (event, direction) {
   // do your fade in here
   $(this).addClass('animated fadeInUp');
 }, {

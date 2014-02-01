@@ -52,11 +52,6 @@ img {
   max-width: 100%;
 }
 
-a:link {
-  color : #ccc;
-  text-decoration : none;
-}
-
 a:hover {
   color : #ccc;
   text-decoration : none;
@@ -295,8 +290,7 @@ input:-moz-placeholder {
  */
 
 #slide1 {
-  min-height: 550px;
-  position: relative;
+  min-height: 580px;
 }
 
 .welcome {

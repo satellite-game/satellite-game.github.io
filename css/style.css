@@ -561,10 +561,6 @@ iframe, object, embed {
   position: relative;
 }
 
-#members {
-  opacity: 0;
-}
-
 .team-member {
   background: #272727;
   -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
@@ -866,6 +862,21 @@ iframe, object, embed {
 ==================================
  */
 
+@media (max-width: 1199px) {
+  .team-member {
+    width: 22.237569061%;
+    margin-bottom: 30px;
+  }
+
+  .team-member:nth-child(4n + 1) {
+    margin-left: 0%;
+  }
+
+  .team-member:nth-child(6) {
+    margin-left: 2.7624309392265194%;
+  }
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
   h1 {
@@ -1041,16 +1052,4 @@ iframe, object, embed {
   .team-role {
     line-height: 1.5em;
   }
-
-}
-
-/*
-==================================
-             Cross browser fix
-==================================
- */
-
-/* Internet Explorer */
-.serv, #testimonialsCarousel, #members, .nivoSlider, .thumbs img, #subArea3 .container, .table,.contact-icons,.contact-details, #contact-form {
-  opacity:1 !important; /* IE 9 and below */
 }

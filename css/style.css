@@ -1038,7 +1038,7 @@ iframe, object, embed {
   .welcome h1 {
     font-size: 4em;
     padding: 0;
-    padding-top: 300px;
+    padding-top: 75px;
   }
 
   .about h2 {
@@ -1097,3 +1097,10 @@ iframe, object, embed {
     line-height: 1.5em;
   }
 }
+
+@media (max-width: 320px) {
+  .welcome h1 {
+    padding-top: 155px;
+  }
+}
+

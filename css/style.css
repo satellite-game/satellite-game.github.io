@@ -542,6 +542,10 @@ iframe, object, embed {
   position: relative;
 }
 
+.team {
+  padding-bottom: 50px;
+}
+
 .team-member {
   background: #272727;
   -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
@@ -639,6 +643,26 @@ iframe, object, embed {
 
 .team-member-name:hover {
   cursor: default;
+}
+
+/*
+==================================
+     Footer
+==================================
+ */
+
+.main-footer {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+.main-footer a:hover {
+  color: rgb(0, 136, 204);
+  text-decoration: underline;
 }
 
 /*

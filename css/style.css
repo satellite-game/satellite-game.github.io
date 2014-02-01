@@ -1033,6 +1033,14 @@ iframe, object, embed {
     margin-bottom: 20px;
   }
 
+  .team-member {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .team-role {
+    line-height: 1.5em;
+  }
 
 }
 

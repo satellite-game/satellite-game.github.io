@@ -891,8 +891,17 @@ iframe, object, embed {
     padding-top: 50px;
   }
 
+  .welcome h1 {
+    padding-top: 130px
+  }
+
   .about-description {
+    margin-bottom: 40px;
     width: 100%;
+  }
+
+  .about .title {
+    margin-bottom: 0;
   }
 
   .oculus-video-wrapper {
@@ -905,11 +914,11 @@ iframe, object, embed {
   }
 
   .controls h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .controls p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .team-member {
@@ -918,6 +927,11 @@ iframe, object, embed {
 
   .team-member:nth-child(5n + 1) {
     margin-left: 2.7624309392265194%;
+    /*border: 1px solid blue;*/
+  }
+
+  .team-member:nth-child(4n) {
+    margin-right: 2.7624309392265194%;
   }
 
   .team-member:nth-child(3n + 1) {
@@ -926,7 +940,7 @@ iframe, object, embed {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     padding-left: 0;
     padding-right: 0;
@@ -960,11 +974,16 @@ iframe, object, embed {
 
   .controls:hover {
     margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .tech-grid:hover {
     margin-top: 0;
     margin-bottom: 40px;
+  }
+
+  .team-member:nth-child(4n) {
+    margin-right: 2.7624309392265194%;
   }
 }
 

@@ -44,6 +44,15 @@ $(function () {
   };
 
   links.click(function (e) {
+    // check to see if navigation condensed menu is active, which means
+    // user is on small screen size
+    if ($('.nav-condensed-menu:visible')) {
+      // toggle visibility of the menu itens after clicking, giving more space
+      // for user after click action
+      $('.navigation').toggleClass('notVisible');
+      $('.navigation').toggleClass('visible');
+    }
+
     e.preventDefault();
     dataslide = $(this).attr('data-section');
     goToByScroll(dataslide);

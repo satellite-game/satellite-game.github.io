@@ -979,6 +979,10 @@ iframe, object, embed {
     padding-left: 0;
   }
 
+  .controls-small {
+    width: 23%;
+  }
+
   .team-member {
     width: 48%;
     margin-left: 2.7624309392265194%;
@@ -991,6 +995,12 @@ iframe, object, embed {
   .team-member:nth-child(4n) {
     margin-right: 0;
     margin-left: 2.7624309392265194%;
+  }
+}
+
+@media (max-width: 550px) {
+  .controls h3 {
+    font-size: 1em;
   }
 }
 

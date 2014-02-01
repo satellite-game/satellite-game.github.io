@@ -168,7 +168,6 @@ i {
 }
 
 /* States */
-
 .notVisible {
   display: none;
 }
@@ -318,6 +317,7 @@ input:-moz-placeholder {
   margin-top: 0;
   text-align: center;
   padding: 50px;
+  padding-top: 200px;
   font-size: 7em;
 }
 
@@ -873,7 +873,7 @@ iframe, object, embed {
   }
 
   .welcome h1 {
-    padding-top: 130px
+    padding-top: 250px
   }
 
   .about-description {

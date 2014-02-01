@@ -474,35 +474,28 @@ iframe, object, embed {
   font-size: 1.2em;
 }
 
-.controls-wrapper {
-  margin-top: 40px;
-  min-height: 177px;
-}
-
-.controls-wrapper:first-child {
-  margin-top: 0;
-}
-
 .controls {
-  width: 18%;
-  margin-left: 2%;
   float: left;
-  transition: margin-top 100ms;
-  -moz-transition: margin-top 100ms;
-  -ms-transition: margin-top 100ms;
-  -o-transition: margin-top 100ms;
-  -webkit-transition: margin-top 100ms;
+  width: 18%;
+  margin-bottom: 40px;
+  margin-left: 2%;
   border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+  transition: all 100ms;
+  -moz-transition: all 100ms;
+  -ms-transition: all 100ms;
+  -o-transition: all 100ms;
+  -webkit-transition: all 100ms;
   text-transform: uppercase;
   text-align: center;
 }
 
-.controls:first-child {
+.controls:nth-child(5n + 1) {
   margin-left: 0;
 }
 
 .controls:hover {
   margin-top: -20px;
+  margin-bottom: 60px;
 }
 
 .controls h3 {
@@ -966,7 +959,68 @@ iframe, object, embed {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .navbar-inner {
+    padding: 0;
+  }
 
+  .navbar-inner a {
+    display: none;
+  }
+
+  .navigation {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: .8em;
+  }
+
+  .welcome h1 {
+    font-size: 4em;
+    padding: 0;
+    padding-top: 300px;
+  }
+
+  .about h2 {
+    font-size: 1.5em;
+  }
+
+  .quickstart .title {
+    margin-bottom: 20px;
+  }
+
+  .controls {
+    width: 48%;
+    margin-bottom: 20px;
+    margin-left: 4%;
+  }
+
+  .controls:nth-child(5n + 1) {
+    margin-left: 2%;
+  }
+
+  .controls:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+
+  .controls:nth-child(5) {
+    margin-right: 50%
+  }
+
+  .controls-small:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 4%;
+  }
+
+  .controls:hover {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 /*

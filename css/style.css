@@ -990,7 +990,7 @@ iframe, object, embed {
     font-size: 1.5em;
   }
 
-  .quickstart .title {
+  .quickstart .title, .techstack .title {
     margin-bottom: 20px;
   }
 
@@ -1021,6 +1021,19 @@ iframe, object, embed {
     margin-top: 0;
     margin-bottom: 20px;
   }
+
+  .tech-grid {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .tech-grid:hover {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+
 }
 
 /*

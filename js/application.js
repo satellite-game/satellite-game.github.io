@@ -24,8 +24,22 @@ $(function () {
   });
 
   var goToByScroll = function (dataSlide) {
+    // find the slide section element
+    var slide = $('.slide[data-section="' + dataslide + '"]');
+    // store navbar height value
+    var navHeight = $('.navbar-inner').height();
+    // store slide top padding value
+    var slidePadding = parseInt(slide.css('padding-top').slice(0, -2));
+    // store slide position on screen
+    var slidePosition = slide.offset().top;
+    // calculate target position to scroll by using slidePosition, then remove
+    // the height of the navigation bar (so it always display the title) and add half
+    // of the slide padding, so it adds some space between nav bar and the title
+    var scrollPosition = slidePosition - navHeight + (slidePadding / 2);
+
+    // scroll to target position
     htmlBody.animate({
-      scrollTop: $('.slide[data-section="' + dataslide + '"]').offset().top
+      scrollTop: scrollPosition
     }, 1200, 'easeInOutQuint');
   };
 
@@ -104,12 +118,3 @@ $(function() {
     e.preventDefault();
   });
 });
-
-
-
-
-
-
-
-
-

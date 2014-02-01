@@ -101,7 +101,8 @@ $(function() {
   console.log('aeww');
   $('.nav-condensed-menu').on('click', function (e) {
     console.log('ae');
-    $('.navigation').toggle();
+    $('.navigation').toggleClass('notVisible');
+    $('.navigation').toggleClass('visible');
     e.preventDefault();
   });
 });
